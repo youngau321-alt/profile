@@ -1,2 +1,171 @@
-                                                                                   ยอง อู ชอย
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์นักศึกษา - ยอง อู ชอย</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0eafc, #cfdef3);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .profile-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .header-bg {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            height: 120px;
+        }
+
+        .avatar-container {
+            margin-top: -75px;
+            margin-bottom: 15px;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+
+        .profile-info {
+            padding: 0 30px 30px 30px;
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .student-id {
+            font-size: 16px;
+            color: #7f8c8d;
+            font-weight: 600;
+            background: #f8f9fa;
+            display: inline-block;
+            padding: 4px 15px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            border: 1px solid #e9ecef;
+        }
+
+        .details-list {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            background: #fdfdfd;
+            border-left: 4px solid #2a5298;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .label {
+            font-weight: 600;
+            color: #34495e;
+            width: 100px;
+            flex-shrink: 0;
+        }
+
+        .value {
+            color: #555555;
+            word-break: break-word;
+        }
+
+        .value a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+
+        .value a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-text {
+            margin-top: 25px;
+            font-size: 13px;
+            color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="header-bg"></div>
+        
+        <div class="avatar-container">
+            <img src="profile.jpg" alt="รูปโปรไฟล์ ยอง อู ชอย" class="profile-img">
+        </div>
+
+        <div class="profile-info">
+            <div class="name">ยอง อู ชอย</div>
+            <div class="student-id">รหัสนักศึกษา: 694245021</div>
+            
+            <div class="details-list">
+                <div class="detail-item">
+                    <span class="label">สาขาวิชา</span>
+                    <span class="value">วิทยาการคอมพิวเตอร์</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">คณะ</span>
+                    <span class="value">วิทยาศาสตร์และเทคโนโลยี</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">มหาวิทยาลัย</span>
+                    <span class="value">มหาวิทยาลัยราชภัฏหมู่บ้านจอมบึง</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">เบอร์โทรศัพท์</span>
+                    <span class="value"><a href="tel:0615071476">061-507-1476</a></span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">อีเมล</span>
+                    <span class="value"><a href="mailto:youngau321@gmail.com">youngau321@gmail.com</a></span>
+                </div>
+            </div>
+
+            <div class="footer-text">Student Profile Card © 2026</div>
+        </div>
+    </div>
+
+</body>
+</html>
 
