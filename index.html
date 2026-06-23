@@ -46,13 +46,24 @@
         }
 
         .avatar-container {
-            margin-top: -75px;
+            margin-top: -70px; /* ขยับรูปภาพขึ้นไปซ้อนทับส่วนหัว */
             margin-bottom: 15px;
         }
 
-        .profile-img {https://www.facebook.com/photo/?fbid=974618064316538&set=a.124351392676547&__cft__[0]=AZa5ToD0aAFEzuzbskn8rK4mG3T7-blbFReFzZ0BxsJRoAbE7AyM1UaMUTXjkkkS9XnYyiK0QrFb730uhROZJLbMu1jG730cuKHEK97BEoWmETLnb_e-O8vp4scLME8EcrM&__tn__=EH-R}
+        /* แก้ไขส่วนของรูปภาพให้ถูกต้องตามหลัก CSS */
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%; /* ปรับรูปทรงให้เป็นวงกลม */
+            border: 5px solid #ffffff; /* ใส่ขอบสีขาวหนา 5px */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* เพิ่มมิติเงาใต้รูป */
+            object-fit: cover; /* ล็อคสัดส่วนรูปไม่ให้บิดเบี้ยว */
+            background-color: #f0f3f5; /* สีพื้นหลังกรณีที่รูปภาพยังโหลดไม่ขึ้น */
+        }
 
-        .profile-info {padding: 0 30px 30px 30px;}
+        .profile-info {
+            padding: 0 30px 30px 30px;
+        }
 
         .name {
             font-size: 24px;
@@ -123,6 +134,7 @@
         <div class="header-bg"></div>
         
         <div class="avatar-container">
+            <!-- ยึดชื่อไฟล์หลักเป็น profile.jpg -->
             <img src="profile.jpg" alt="รูปโปรไฟล์ ยอง อู ชอย" class="profile-img">
         </div>
 
@@ -159,4 +171,3 @@
 
 </body>
 </html>
-
